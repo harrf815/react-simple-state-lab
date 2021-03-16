@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Cell from './Cell'
 
 export default class Matrix extends Component {
   
@@ -18,4 +19,10 @@ export default class Matrix extends Component {
     )
   }
   
+  
+}
+const array = new Array(10).fill('#F00')
+
+Matrix.defaultProps ={
+  values: [array, array, array, array, array, array, array, array, array, array]
 }
